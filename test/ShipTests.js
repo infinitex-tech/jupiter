@@ -33,14 +33,5 @@ describe('Ship Contract Tests', function () {
         }
     });
 
-    it('should create a new ship', async () => {
-        let shipName = 'Galaxy Invader';
-
-        await jupiterContractInstance.createship(shipName);
-        let shipsTable = await EOSIORpc.get_table_rows({ code: account.name, scope: account.name, table: 'ship'});
-        let ships = shipsTable['rows'];
-        let ship = ships[ships.length - 1];
-
-        assert.strictEqual(ship.ship_name, shipName, `Invalid ship name. [${shipName}] was expected but [${ship.ship_name}] was returned.`);
-    });
+    
 });
