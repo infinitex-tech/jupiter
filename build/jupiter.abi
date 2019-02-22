@@ -1,0 +1,133 @@
+{
+    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT Thu Feb  22 09:34:49 2019",
+    "version": "eosio::abi/1.1",
+    "structs": [
+        {
+            "name": "warrior",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "name",
+                    "type": "string"
+                },
+                {
+                    "name": "colony",
+                    "type": "string"
+                },
+                {
+                    "name": "race",
+                    "type": "string"
+                },
+                {
+                    "name": "ship_id",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "ship",
+            "base": "",
+            "fields": [
+                {
+                    "name": "id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "ship_name",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "crwarrior",
+            "base": "",
+            "fields": [
+                {
+                    "name": "warrior_name",
+                    "type": "string"
+                },
+                {
+                    "name": "colony",
+                    "type": "string"
+                },
+                {
+                    "name": "race",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "addship",
+            "base": "",
+            "fields": [
+                {
+                    "name": "ship_id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "warrior_id",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "createship",
+            "base": "",
+            "fields": [
+                {
+                    "name": "ship_name",
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "types": [],
+    "actions": [
+        {
+            "name": "crwarrior",
+            "type": "crwarrior",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "addship",
+            "type": "addship",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "createship",
+            "type": "createship",
+            "ricardian_contract": ""
+        }
+    ],
+    "tables": [
+        {
+            "name": "warrior",
+            "index_type": "i64",
+            "key_names": [
+                "id"
+            ],
+            "key_types": [
+                "uint64"
+            ],
+            "type": "warrior"
+        },
+        {
+            "name": "ship",
+            "index_type": "i64",
+            "key_names": [
+                "id"
+            ],
+            "key_types": [
+                "uint64"
+            ],
+            "type": "ship"
+        }
+    ],
+    "ricardian_clauses": [],
+    "variants": [],
+    "abi_extensions": []
+}
